@@ -1,17 +1,23 @@
-# Welcome to MkDocs
+# Welcome to my IT Portfolio Site
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<!-- Parent Container -->
+<div style="overflow: auto;"> 
 
-## Commands
+  <!-- Left Column (Image) -->
+  <div style="float: left; width: 50%; padding: 10px; box-sizing: border-box;">
+    <h2> Hello </h2>
+    <p style="font-size: 17px;">I am an aspiring IT professional with a strong foundation in troubleshooting, networking, and technical support. </p>
+    
+    <p style="font-size: 17px;"> I am seeking entry-level roles in help desk, IT support, desktop support, or similar positions, where I can apply my knowledge and grow my skills. </p> 
+    
+    <p style="font-size: 17px;"> I am eager to learn new technologies, assist users effectively, and contribute reliable IT solutions. </p>
+  </div>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+  <!-- Right Column (Text) -->
+  <div style="float: left; width: 50%; padding: 10px; box-sizing: border-box;">
+    <img src="./images/me.png" alt="Description of image" style="width: 100%; height: auto; display: block;">
+  </div>
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+</div>
+<!-- Clear the float after the container -->
+<div style="clear: both;"></div>

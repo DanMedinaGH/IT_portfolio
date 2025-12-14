@@ -28,14 +28,19 @@ theme:
      - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.fixed
+    - navigation.fixed
     - search.suggest
     - search.highlight
     - search.share
+  
 
 nav:
   - Home: index.md
   - Portfolio: 
-      -  portfolio/portfolio.md
+      - Active Directory:
+        - Setup: portfolio/active_directory/active_directory_setup.md
+        - Emails: portfolio/active_directory/active_directory_emails.md
   - About: 
       - About Me: about/about.md
       - Childhood: about/childhood.md
