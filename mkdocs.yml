@@ -35,9 +35,9 @@ theme:
 nav:
   - Home: index.md
   - Portfolio: 
-      -  portfolio\portfolio.md
+      -  portfolio/portfolio.md
   - About: 
-      - About Me: about\about.md
-      - Childhood: about\childhood.md
+      - About Me: about/about.md
+      - Childhood: about/childhood.md
 
 use_directory_urls: true
