@@ -1,0 +1,41 @@
+site_name: Daniel Medina IT
+site_url: https://mydomain.org/mysite
+theme:
+  palette:
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+  name: material
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs
+     - navigation.tabs.sticky
+     - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+
+nav:
+  - Home: index.md
+  - Portfolio: 
+      -  portfolio\portfolio.md
+  - About: 
+      - About Me: about\about.md
+      - Childhood: about\childhood.md
