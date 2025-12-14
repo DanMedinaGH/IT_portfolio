@@ -1,5 +1,5 @@
 site_name: Daniel Medina IT
-site_url: https://mydomain.org/mysite
+site_url: https://danmedinagh.github.io/IT_portfolio/
 theme:
   palette:
     # Palette toggle for dark mode
@@ -39,3 +39,5 @@ nav:
   - About: 
       - About Me: about\about.md
       - Childhood: about\childhood.md
+
+use_directory_urls: true
