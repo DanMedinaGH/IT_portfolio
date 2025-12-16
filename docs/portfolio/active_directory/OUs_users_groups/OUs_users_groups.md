@@ -13,6 +13,7 @@ In this project we will create **organizational units (OUs)** for our domain. We
 ### OUs
 An **OU** is a container in AD that allows us to organize computers, users, groups, and other objects. It allows adminstrators to logically structure resources in a domain.
 
+#### Setup
 To add an OU we select:
 
 ```
@@ -49,28 +50,42 @@ When that is complete, we'll configure **groups, group scopes, and group types**
 **Group Scope** defines where a group can be used and who can be a member of it in an AD forest or domain. There are 3 group scopes:
 
 1. Domain Local
-    - Purpose: Assign permissions to resources within the **same domain**.
-    - Scope: Within **one domain** only.
+    - Purpose: Assign permissions to resources within **a single domain**.
     - Constraints:
-        - Assign permissions *only* to resources in the ***same* domain**.
-        - Users, computers, and groups can from ***any* domain**
+        - Members can come from ***any* domain in the same forest or trusted forest**.
+        - Permissions assigned to resources in a ***single* domain**.
     - Typical scenario: "Who can access this file server?"
         - Example: ```DL_Fileserver_read```
 
 2. Global
     - Purpose: Group users with the same job role.
-    - Scope: Within **one domain** only.
     - Constraints:
-        - Members must come from the same ***same* domain**.
-        - Can be granted permissions in **the forest/*any* domain**.
+        - Members come from ***a single* domain**.
+        - Permissions assigned to resources in a ***any* domain in a forest or trusting forest**.
     - Typical scenario: "Who are the Help Desk staff?"
         - Example: ```GG_HelpDesk```
 
 3. Universal
-    - Purpose: Groups users across multiple domains with the same job role.
+    - Purpose: Groups users across multiple domains in the same forest with the same job role.
     - Scope of use: ***Entire* forest**
     - Constraints:
-        - Members can come from ***any* domain**.
-        - Can assign permissions **anywhere**.
+        - Members can come from ***any* domain in the same forest**.
+        - Permissions assigned to resources in a ***any* domain in a forest or trusting forest**.
     - Typical scenario: "Users from multiple domains need the same access."
         - Example: ```UG_All_IT_Staff```
+
+**Group type** defines the purpose of the group - whether it's used for **security** or **distribution**:
+
+- Security group
+    - Purpose: **Assigns permissions to resources** like files, folders, printer, other groups, etc.
+    - Example: Security group ```HR_ReadOnly``` gives access to HR file share.
+- Distribution group (Distro List)
+    - Purpose: Create **email distributions** for sending emails to a list of users.
+    - Example: Distribution group ```AllEmployees``` is used for sending company-wide emails.
+
+#### Setup
+```Right-click OU > New > Group```
+
+![New Group](./assets/images/new_group.png)
+
+After clicking OK a new group will be added to the OU.
