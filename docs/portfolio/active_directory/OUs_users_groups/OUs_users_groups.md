@@ -39,6 +39,16 @@ We'll create OUs for each geopgraphical location and each resource type:
 
 ![New OU](./assets/images/OUs.png)
 
+### Users
+**Users** represent individuals in a domain that can **access resources**.
+
+#### Setup
+```Right-click OU > New > User```
+
+![New User](./assets/images/new_user.png)
+
+We then fill out their credentials information to complete their creation.
+
 ### Groups
 
 When that is complete, we'll configure **groups, group scopes, and group types** for our OUs.<br/><br/>
@@ -89,13 +99,3 @@ When that is complete, we'll configure **groups, group scopes, and group types**
 ![New Group](./assets/images/new_group.png)
 
 After clicking OK a new group will be added to the OU.
-
-### Users
-**Users** represent individuals in a domain that can **access resources**.
-
-#### Setup
-```Right-click OU > New > User```
-
-![New User](./assets/images/new_user.png)
-
-We then fill out their credentials information to complete their creation.
