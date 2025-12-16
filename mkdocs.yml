@@ -26,7 +26,6 @@ theme:
     - navigation.tabs
      - navigation.tabs.sticky
      - navigation.sections
-    - navigation.expand
     - navigation.top
     - navigation.fixed
     - navigation.fixed
@@ -44,6 +43,6 @@ nav:
         - Emails: portfolio/active_directory/active_directory_emails/active_directory_emails.md
       - Office 365:
         - Setup: portfolio/office_365/office_365.md
-  - About: about/about.md
+  - Contact: contact/contact.md
 
 use_directory_urls: true
