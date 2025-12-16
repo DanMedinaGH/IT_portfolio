@@ -22,7 +22,7 @@ Windows Key > Windows Administrative Tools > Active Directory Users and Computer
 This brings the following menu: <br/><br/>
 ![AD Users and Computers](./assets/images/ad_users_and_computers.png)
 
-The folders under our root domain **DanielIT.local** are pre-built OUs.
+As we can see, our domain **DanielIT.local** already has pre-built OUs.
 
 We will then create OUs for the different country departments in our domain:
 
@@ -37,3 +37,40 @@ Here, we write a name and select **OK** to create the OU.
 We'll create OUs for each geopgraphical location and each resource type:
 
 ![New OU](./assets/images/OUs.png)
+
+### Groups
+
+When that is complete, we'll configure **groups, group scopes, and group types** for our OUs.<br/><br/>
+
+**Groups** are containers are used to control **permissions on resources** and **simplify managment**.
+
+- Instead of assigning permissions to individuals, we assign users to groups.
+
+**Group Scope** defines where a group can be used and who can be a member of it in an AD forest or domain. There are 3 group scopes:
+
+1. Domain Local
+    - Purpose: Assign permissions to resources within the **same domain**.
+    - Scope: Within **one domain** only.
+    - Constraints:
+        - Assign permissions *only* to resources in the ***same* domain**.
+        - Users, computers, and groups can from ***any* domain**
+    - Typical scenario: "Who can access this file server?"
+        - Example: ```DL_Fileserver_read```
+
+2. Global
+    - Purpose: Group users with the same job role.
+    - Scope: Within **one domain** only.
+    - Constraints:
+        - Members must come from the same ***same* domain**.
+        - Can be granted permissions in **the forest/*any* domain**.
+    - Typical scenario: "Who are the Help Desk staff?"
+        - Example: ```GG_HelpDesk```
+
+3. Universal
+    - Purpose: Groups users across multiple domains with the same job role.
+    - Scope of use: ***Entire* forest**
+    - Constraints:
+        - Members can come from ***any* domain**.
+        - Can assign permissions **anywhere**.
+    - Typical scenario: "Users from multiple domains need the same access."
+        - Example: ```UG_All_IT_Staff```
