@@ -1,14 +1,12 @@
 # Active Directory Setup
-In this project we install **Active Directory** in a **Windows Server 2022** virtual machine.
-<!-- There is a bug with the Material theme
-where the current directory is not 
-navigating to subfolder correctly.
-".." must be used.
-[<img src="../assets/images/active_directory_banner.png">]
--->
-![Active Directory Banner](./assets/images/active_directory_banner.png)
+![Active Directory Banner](../assets/images/active_directory_banner.png)
+
+In this project we will setup **Active Directory** in a **Windows Server 2022** virtual machine for our domain.
+
+A **domain** is a logical grouping of computers, users, and resources. 
 
 **Active Directory** is a service that authenticates and authorizes all users, computers, and resources within a domain.
+
 
 ## Operating Systems
 - Windows 11 (x86-64)
@@ -55,12 +53,12 @@ In the following menu we can then add a new **forest** and specify a **root doma
 
 ![Add Forest Root Domain Name](./assets/images/add_forest_root_domain_name.png)
 
-A *forest* is a top-level container that holds one or more domains. It represent the entire AD ecosystem for an organization. The *root domain name* is the top-level domain for an organization and is the foundation for subdomains added later, for example:
+A *forest* is a top-level container that holds one or more child domains. It represent the entire AD ecosystem for an organization. The *root domain name* is the top-level domain for an organization and is the foundation for child domains added later, for example:
 
 ```
 Root Domain: corp.local
-    - Subdomain: us.corp.local
-    - Subdomain: uk.corp.local
+    - Child Domain: us.corp.local
+    - Child Domain: uk.corp.local
 ```
 
 We add **`.local`** to tell Windows Server that the domain is a local domain, not a public internet domain.

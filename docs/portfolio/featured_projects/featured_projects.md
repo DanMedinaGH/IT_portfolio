@@ -8,7 +8,7 @@
   </div>
   <!-- Right Column (Text) -->
   <div style="float: right; width: 50%; padding: 10px; box-sizing: border-box;">
-    <img src="../../active_directory/active_directory_setup/assets/images/active_directory_banner.png" alt="Description of image" style="width: 100%; height: auto; display: block;">
+    <img src="../../active_directory/assets/images/active_directory_banner.png" alt="Active Directory Banner" style="width: 100%; height: auto; display: block;">
   </div>
 
 

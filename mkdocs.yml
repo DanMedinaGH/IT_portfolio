@@ -32,6 +32,8 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - navigation.toc
+      - navigation.sections
   
 
 nav:
@@ -39,8 +41,9 @@ nav:
   - Portfolio:
       - Featured Projects: portfolio/featured_projects/featured_projects.md
       - Active Directory:
-        - Active Directory Setup: portfolio/active_directory/active_directory_setup/active_directory_setup.md
-        - Emails: portfolio/active_directory/active_directory_emails/active_directory_emails.md
+        - Active Directory Setup: portfolio/active_directory/setup/setup.md
+        - Organizational Units, Users, & Groups Creation: portfolio/active_directory/OUs_users_groups/OUs_users_groups.md
+        - Emails: portfolio/active_directory/emails/emails.md
       - Office 365:
         - Setup: portfolio/office_365/office_365.md
   - Contact: contact/contact.md
