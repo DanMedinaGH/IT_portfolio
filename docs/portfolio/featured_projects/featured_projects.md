@@ -4,7 +4,8 @@
 
   <!-- Right Column (Image) -->
   <div style="float: left; width: 50%; padding-top: 25px; box-sizing: border-box; justify-content: center">
-    <u><a href="https://danmedinagh.github.io/IT_portfolio/portfolio/active_directory/setup/setup/"><h1 style="color:white;">Active Directory Setup </h1></a></u>
+    <u><a href="https://danmedinagh.github.io/IT_portfolio/portfolio/active_directory/setup/setup/
+"><h1 style="color:white;">Active Directory Setup </h1></a></u>
   </div>
   <!-- Right Column (Text) -->
   <div style="float: right; width: 50%; padding: 10px; box-sizing: border-box;">
