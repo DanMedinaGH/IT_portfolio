@@ -40,7 +40,7 @@ nav:
   - Portfolio:
       - Featured Projects: portfolio/featured_projects/featured_projects.md
       - Active Directory:
-        - Setup: portfolio/active_directory/active_directory_setup/active_directory_setup.md
+        - Active Directory Setup: portfolio/active_directory/active_directory_setup/active_directory_setup.md
         - Emails: portfolio/active_directory/active_directory_emails/active_directory_emails.md
       - Office 365:
         - Setup: portfolio/office_365/office_365.md
