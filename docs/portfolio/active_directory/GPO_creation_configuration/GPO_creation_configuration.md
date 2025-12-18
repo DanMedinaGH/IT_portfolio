@@ -1,4 +1,5 @@
 # GPO Creation and Configuration
+![Active Directory Banner](../assets/images/active_directory_banner.png)
 In this project we will create and setup **Group Policy Objects (GPOs)** for our domain.
 
 **Group Policy** are security and configuration policies and preferences for users and computers.
