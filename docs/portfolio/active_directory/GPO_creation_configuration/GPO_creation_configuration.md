@@ -1,6 +1,10 @@
 # GPO Creation and Configuration
 In this project we will create and setup **Group Policy Objects (GPOs)** for our domain.
 
+**Group Policy** are security and configuration policies and preferences for users and computers.
+
+**GPOs** or **group policy objects** are used to centrally manage group policy.
+
 ## Operating Systems
 - Windows 11 (x86-64)
 - Windows Server 2022 (x86-64)
@@ -9,19 +13,17 @@ In this project we will create and setup **Group Policy Objects (GPOs)** for our
 - VMware Workstation Pro for Personal Use (Windows)
 
 ## GPO Creation and Configuration
-A **GPO** or ***Group Policy Object*** is an object that holds a collection of settings used to **centrally manage and control users' and computers'** policies and preferences in a domain.
-
-A GPO allows administrators to define rules such as:
+We can create GPOs for:
 - Password and account lockout policies.
 - Desktop and Start Menu settings
 - Software installation and updates
 - Security settings (firewall, BitLocker, audit policies)
 - Scripts (logon, logoff, startup, shutdown)
 
-GPOs allow behavior to be configured **once and apply everywhere**, instead of individually for each computer.
+They allow behavior to be configured **once and applied everywhere**, instead of individually for each computer.
 
 ### Creation
-Before we create the GPO we first must ensure the **Group Policy Management** is installed in our server.
+Before we create the GPO we must ensure the **Group Policy Management** is installed in our server.
 
 ![GPO Feature](./assets/images/GPO_feature.png)
 

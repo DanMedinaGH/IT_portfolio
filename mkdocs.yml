@@ -44,7 +44,7 @@ nav:
         - Active Directory Setup: portfolio/active_directory/setup/setup.md
         - Organizational Units, Users, & Groups Creation: portfolio/active_directory/OUs_users_groups/OUs_users_groups.md
         - GPO Creation and Configuration: portfolio/active_directory/GPO_creation_configuration/GPO_creation_configuration.md
-        - Emails: portfolio/active_directory/emails/emails.md
+        - GPO Application and Testing: portfolio/active_directory/GPO_application_testing/GPO_application_testing.md
       - Office 365:
         - Setup: portfolio/office_365/office_365.md
   - Contact: contact/contact.md

@@ -2,6 +2,7 @@
 ![Active Directory Banner](../assets/images/active_directory_banner.png)
 In this project we will create **organizational units (OUs)** for our domain. We will also create users and groups for our OUs.
 
+
 ## Operating Systems
 - Windows 11 (x86-64)
 - Windows Server 2022 (x86-64)
