@@ -127,6 +127,6 @@ Now we will try to change the wallpaper.
 
 ![Wallpaper Update Failed](./assets/images/wallpaper_update_failed.png)
 
-As we can see it faile as well.
+As we can see it failed as well.
 
 So our GPOs are working successfully!
