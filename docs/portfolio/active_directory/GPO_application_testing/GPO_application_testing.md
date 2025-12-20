@@ -88,3 +88,45 @@ We will use the Administrator account we used to create the domain.
 If the join is successful we should get a welcome message.
 
 ![Domain Join Welcome Client](./assets/images/domain_join_welcome_client.png)
+
+### GPO Application
+#### Add Client to OU
+Now that our client machine is connected to the domain. We now must add it to the correct OU.
+
+In **Active Directory Users and Computers** we move it from the domain **Computers** to the OU **Computers**
+
+![Move Domain CPU to OU CPU Client](./assets/images/move_domain_cpu_to_OU_cpu_client.png)
+
+#### Apply to GPO to OU Users and Computers
+Now that we have our client computer in the correct OU, we can apply our GPOs since we already have previously created Users in the OU.
+
+To apply the GPOs we go to the **Group Policy Management Console** 
+
+Then, we just move the GPOs with **User Configurations** to the ***Users*** folder/OU and GPOs with **Computer Configurations** to the ***Computers*** folder/OU.
+
+![Move GPOs to OU](./assets/images/move_GPOs_to_OU.png)
+
+## Test GPOs
+Now we can test if the GPOs are working.
+
+But before we do we will run the ```gpupdate /force``` command in our DC. This is because GPOs are only active 90 minutes after they are applied.
+
+First we log in to one of the OU users from our client VM.
+
+![User Login Client](./assets/images/user_login_client.png)
+
+Now we will try the control panel GPO.
+
+![Control Panel Denied Access](./assets/images/control_panel_denied_access.png)
+
+As we can see our access is denied as is expected.
+
+Now we will try to change the wallpaper.
+
+![Change Wallpaper](./assets/images/change_wallpaper.png)
+
+![Wallpaper Update Failed](./assets/images/wallpaper_update_failed.png)
+
+As we can see it faile as well.
+
+So our GPOs are working successfully!
