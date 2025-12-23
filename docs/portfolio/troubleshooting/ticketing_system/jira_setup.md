@@ -1,5 +1,11 @@
 # Jira Setup
+## Summary
 A **ticketing system** is used to manage issues and requests from users in your organization.
+
+We will setup a ticketing system for this project and create an example incident.
+
+
+## Setup
 
 **Jira** is a popular to platform to manage tickets. You can create a free-trial to start creating your own tickets.
 
@@ -9,7 +15,16 @@ In Jira IT tickets are managed in an **IT service management** space. We can cre
 
 ![Jira IT Service Management Template](./assets/images/jira_IT_service_management_template.png)
 
-One we are here we can create an **incident** so IT can resolve our issue.
+## Tickets
+
+### Creation
+Once the space is setup, we can create an **incident** so IT can resolve our issue.
+
+The **Create** option is next to the search bar.
+
+![Jira Create Ticket](./assets/images/jira_create_ticket.png)
+
+We will create an **incident**.
 
 ![Jira Example Ticket 1](./assets/images/jira_example_ticket1.png)
 
@@ -18,13 +33,16 @@ An incident is created when:
 - Something **unexpected** is broken.
 - A service is **not working** or **unresponsive**.
 
-<br/>
 
-![Jira Example Ticket 2](./assets/images/jira_example_ticket2.png)
+### Form Information
 
 **Summarize this problem** should clearly communicate the issue.
 
 **Describe what happened and how it occurred** should be as specific as possible. It should also contain any alternative contact information if you are not available through email.
+
+![Jira Example Ticket 2](./assets/images/jira_example_ticket2.png)
+
+Then we should state state the proper **urgnecy** and **impact**.
 
 ![Jira Example Ticket 3](./assets/images/jira_example_ticket3.png)
 
@@ -36,7 +54,7 @@ An incident is created when:
 
 ![Jira Impact](./assets/images/jira_impact.png)
 
-Depending on the urgency and impact, Jira will assign a priority to the ticket. The below matrix is what is typically used to assign priority.
+Depending on the urgency and impact, Jira will assign a priority to the ticket. The below matrix is what's typically used to assign priority.
 
 ![Urgency Impact Priority Matrix](./assets/images/urgency_impact_priority_matrix.png)
 
@@ -44,12 +62,12 @@ We can view open incidents in the Jira IT service management space.
 
 ![Jira Incidents Queue](./assets/images/jira_incidents_queue.png)
 
-Here, we can assign ourselves tickets
+Here, we can assign ourselves tickets.
 
 ![Jira Incidents Queue Open](./assets/images/jira_incidents_queue_open.png)
 
-If we click on the ticket we can view the **SLA**. 
+If we click on the ticket we can view the **SLA** or **Service Level Agreement**. 
 
 ![SLA Jira](./assets/images/SLA_jira.png)
 
-This tells us **how fast we should respond** to an open ticket and **how much time it should be resolved in**, depending on the priority.
+This tells us **how fast we should respond** to an open ticket and **how much time it should be resolved in**, depending on the priority to ensure **customer satisfaction**.
