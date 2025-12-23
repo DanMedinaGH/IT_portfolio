@@ -1,15 +1,17 @@
 ![Active Directory Banner](./assets/images/active_directory_banner.png)
-# Network Sharing and FSRM Setup
-In this lab we will setup **network sharing** for a client machinee.
+# File Sharing and FSRM Setup
+In this lab we will setup **file network sharing** for a server and client machine.
 
 ## Summary
-**Network sharing** is sharing resources over a network so other devices or users can access them. These could be folders, drives, printers, etc.
+**Network sharing** is the sharing of resources over a network, so other devices or users can access them. These resources called **shares** could be folders, printers, drives, etc.
 
-The types of permissions we can configure for shares are **NTFS** and **Share** permissions.
+We will configure a **file share** which is a shared folder.
+
+The types of permissions we can configure for file shares are **NTFS** and **Share** permissions.
 - NTFS allows for file and folder level control.
 - Share allows only folder level control.
 
-After we set up our share, we can manage the Share using **FSRM**, the **File Server Resource Manager**.
+After we set up our file share, we can manage it using **FSRM**, the **File Server Resource Manager**.
 
 ## Prerequisites
 ### OS system
@@ -61,13 +63,13 @@ For now we will only add the domain Users into the **Group or user names** group
 
 ## Client Access 
 ### Setting Up Network Drive with Mapping
-We can connect to a folder Share by directly mapping a drive to it. This is best if we need to **immediately provide** a connection for a **single user** for **testing or troubleshooting** purposes.
+We can connect to a file share by directly mapping a drive to it. This is best if we need to **immediately provide** a connection for a **single user** for **testing or troubleshooting** purposes.
 
 In our client VM in the **File Explorer** we will right-click **This PC** and select **Map network drive**.
 
 ![Map Network Drive Client](./assets/images/map_network_drive_prompt_client.png/)
 
-We will then add the path to our shared server drive and select the **Reconnect at sign-in** option.
+We will then add the path to our shared folder and select the **Reconnect at sign-in** option.
 
 ![Map Network Drive Menu Client](./assets/images/map_network_drive_menu_client.png)
 
@@ -75,7 +77,7 @@ The shared folder network path can be found in the **Sharing** properties of the
 
 ![Network Folder Share Path DC](./assets/images/network_folder_share_path_dc.png)
 
-After connecting we will see the shared drive under our PC.
+After connecting we will see the file share under our PC.
 
 ![Drive Share Client](./assets/images/drive_share_client.png)
 
