@@ -39,15 +39,12 @@ theme:
 nav:
   - Home: index.md
   - Portfolio:
-      - Featured Projects: portfolio/featured_projects/featured_projects.md
       - Active Directory:
         - Active Directory Setup: portfolio/active_directory/setup/setup.md
         - Organizational Units, Users, & Groups Creation: portfolio/active_directory/OUs_users_groups/OUs_users_groups.md
         - GPO Creation and Configuration: portfolio/active_directory/GPO_creation_configuration/GPO_creation_configuration.md
         - GPO Application and Testing: portfolio/active_directory/GPO_application_testing/GPO_application_testing.md
         - File Sharing and FSRM Setup: portfolio/active_directory/file_sharing_and_fsrm_setup/file_sharing_and_fsrm_setup.md
-      - Office 365:
-        - Setup: portfolio/office_365/office_365.md
       - Device Setup:
         - Network Printer Setup: portfolio/device_setup/printers/network_printer_setup.md
       - Troubleshooting:
