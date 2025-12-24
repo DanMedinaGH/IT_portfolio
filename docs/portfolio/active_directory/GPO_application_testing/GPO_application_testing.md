@@ -1,4 +1,6 @@
 # GPO Application and Testing
+![Active Directory Banner](../assets/images/active_directory_banner.png)
+
 In this project we will be applying and testing GPOs in our domain.
 
 **Group Policy** are security rules and configuration settings for users and computers.

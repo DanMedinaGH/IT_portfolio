@@ -1,5 +1,6 @@
-![Active Directory Banner](./assets/images/active_directory_banner.png)
 # File Sharing and FSRM Setup
+![Active Directory Banner](./assets/images/active_directory_banner.png)
+
 In this lab we will setup **file network sharing** for a server and client machine.
 
 ## Summary
