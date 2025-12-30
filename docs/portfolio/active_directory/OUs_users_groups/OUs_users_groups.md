@@ -54,41 +54,57 @@ We then fill out their credentials information to complete their creation.
 
 When that is complete, we'll configure **groups, group scopes, and group types** for our OUs.<br/><br/>
 
-**Groups** are containers are used to control **permissions on resources** and **simplify managment**.
+**Groups** are containers are used to assign **security policy**, **permissions to resources**, and **simplify managment**.
 
 - Instead of assigning permissions to individuals, we assign users to groups.
 
-**Group Scope** defines where a group can be used and who can be a member of it in an AD forest or domain. There are 3 group scopes:
+**Group Scope** defines where a group can contain members from and where it can be granted permissions or assigned security policy.
+
+There are 3 group scopes:
 
 1. Domain Local
-    - Purpose: Assign permissions to resources within **a single domain**.
-    - Constraints:
-        - Members can come from ***any* domain in the same forest or trusted forest**.
-        - Permissions assigned to resources in a ***single* domain**.
+    - Used for: Assigning permissions to resources within **a single domain**.
+    - Members can come from:
+        - Same domain.
+        - Other domains in the forest.
+        - Trusted domains.
+        - Universal groups.
+        - Global groups.
+    - Where it can be granted permissions:
+        - Only in the domain where the group is created.
     - Typical scenario: "Who can access this file server?"
         - Example: ```DL_Fileserver_read```
 
 2. Global
-    - Purpose: Group users with the same job role.
-    - Constraints:
-        - Members come from ***a single* domain**.
-        - Permissions assigned to resources in a ***any* domain in a forest or trusting forest**.
-    - Typical scenario: "Who are the Help Desk staff?"
-        - Example: ```GG_HelpDesk```
+    - Used for: Assigning permissions to users or computers in the same domain, typically with the same job role.
+    - Members can come from:
+        - Only the in the domain the group is created.
+    - Where it can be granted permissions:
+        - Any domain in the forest (or trusted forest)
+    - Typical scenario: "Who are the Help Desk staff?/Who is in HR?"
+        - Example: ```GG_HelpDesk_Users/GG_HR_Users```
 
 3. Universal
-    - Purpose: Groups users across multiple domains in the same forest with the same job role.
-    - Scope of use: ***Entire* forest**
-    - Constraints:
-        - Members can come from ***any* domain in the same forest**.
-        - Permissions assigned to resources in a ***any* domain in a forest or trusting forest**.
-    - Typical scenario: "Users from multiple domains need the same access."
+    - Used for: Grouping users from multiple domain, typically with the same job role.
+    - Members can come from:
+        - Any domain in the forest.
+    - Where it can be granted permissions:
+        - Any domain in the forest.
+    - Typical scenario: "Users from multiple domains with the same job role need the same access."
         - Example: ```UG_All_IT_Staff```
 
-**Group type** defines the purpose of the group - whether it's used for **security** or **distribution**:
+**Group type** defines the purpose of the group - whether it's used for **security** or **distribution/email**:
 
 - Security group
-    - Purpose: **Assigns permissions to resources** like files, folders, printer, other groups, etc.
+    - Used for: 
+        - **Assigning permissions to resources** 
+    - Resources:  
+        - File shares
+        - NTFS folders
+        - Printers 
+        - Applications
+        - GPO security filtering 
+        - Etc.
     - Example: Security group ```HR_ReadOnly``` gives access to HR file share.
 - Distribution group (Distro List)
     - Purpose: Create **email distributions** for sending emails to a list of users.
