@@ -47,6 +47,8 @@ nav:
         - File Sharing and FSRM Setup: portfolio/active_directory/file_sharing_and_fsrm_setup/file_sharing_and_fsrm_setup.md
       - Office 365:
         - Add User: portfolio/office_365/add_user/office365_add_user.md
+        - Exchange Online:
+          - Message Trace, Shared Mailbox, Distribution List: portfolio/office_365/exchange_online/message_trace_shared_mailbox_dl/message_trace_shared_mailbox_dl.md
       - Device Setup:
         - Network Printer Setup: portfolio/device_setup/printers/network_printer_setup.md
       - Troubleshooting:
