@@ -6,7 +6,7 @@
 
   <!-- Left Column (Image) -->
   <div style="float: left; width: 50%; padding: 10px;padding-top: 75px; box-sizing: border-box;">
-    <p style="font-size: 17px;">I am an aspiring IT professional with a strong foundation in troubleshooting, networking, and technical support. </p>
+    <p style="font-size: 17px;">I am an IT professional with a strong foundation in troubleshooting, networking, and technical support. </p>
     <p style="font-size: 17px;"> I am seeking entry-level roles in help desk, IT support, desktop support, or similar positions, where I can apply my knowledge and grow my skills. </p> 
     <p style="font-size: 17px;"> I am eager to learn new technologies, assist users effectively, and contribute reliable IT solutions. </p>
   </div>
