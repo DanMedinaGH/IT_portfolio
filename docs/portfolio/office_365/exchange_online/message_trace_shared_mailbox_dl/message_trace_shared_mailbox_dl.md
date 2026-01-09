@@ -126,7 +126,7 @@ These can be thought of stages a package goes through in a shipping center:
 If a message is processed but not delivered, this means it was quarantined or blocked/failed.
 
 ### Report Message
-If an incorrect action was taken by Exchange Online, then we can report the message.
+If an incorrect action was taken by Exchange Online, then we can report the message. 
 
 Reporting the message will take us to the Security & Compliance admin center.
 
